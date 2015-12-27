@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="10dp"
+    android:background="#FFF"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+        android:id="@+id/reach_counter_text_include"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_sp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="0"/>
+
+    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+        android:id="@+id/reach_static_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_sp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Reached"
+        android:layout_toRightOf="@id/reach_counter_text_include"
+        />
+
+
+    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+        android:id="@+id/likes_counter_text_include"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_sp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="0"
+        android:layout_toRightOf="@id/reach_static_text"
+        android:layout_marginLeft="10dp"
+        />
+
+    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+        android:id="@+id/likes_static_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_sp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Likes"
+        android:layout_toRightOf="@id/likes_counter_text_include"/>
+
+    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+        android:id="@+id/redeem_counter_text_include"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_sp"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="0"
+        android:layout_toRightOf="@id/likes_static_text"
+        android:layout_marginLeft="10dp"/>
+
+    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+        android:id="@+id/redeem_static_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_sp"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Redeem"
+        android:layout_toRightOf="@id/redeem_counter_text_include"
+        android:layout_marginLeft="5dp"/>
+
+    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+        android:id="@+id/encashed_counter_text_include"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_sp"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="0"
+        android:layout_toRightOf="@id/redeem_static_text"
+        android:layout_marginLeft="10dp"/>
+
+    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_sp"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Encashed"
+        android:layout_toRightOf="@id/encashed_counter_text_include"
+        android:layout_marginLeft="5dp"/>
+
+</RelativeLayout>

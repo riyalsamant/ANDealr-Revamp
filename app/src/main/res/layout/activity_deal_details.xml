@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/andealr_details_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_andealr_fragment_detail_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/details_background_andealr_details_activity"
+                    android:layout_height="300dp"
+                    android:layout_width="405dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <include
+                    android:id="@+id/tittle_bottom_strip_andealr_details_activity"
+                    layout="@layout/include_tittle_locality"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/details_background_andealr_details_activity"
+                    />
+
+                <include
+                    android:id="@+id/details_bottom_strip_andealr_details_activity"
+                    layout="@layout/include_reach_likes_redeem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_background_andealr_details_activity"
+                    />
+                <LinearLayout
+                    android:id="@+id/validity_layout_andnrby_details_activity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FEFEFE"
+                    android:orientation="vertical"
+                    android:padding="@dimen/five_dp"
+                    android:layout_below="@id/details_bottom_strip_andealr_details_activity"
+                    >
+                    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+                        android:id="@+id/start_static_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text=""
+                        android:textSize="@dimen/sixteen_sp"
+                        android:textStyle="bold"
+                        />
+                    <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+                        android:id="@+id/end_static_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="@dimen/sixteen_sp"
+                        android:text=""
+                        />
+
+                </LinearLayout>
+
+                <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+                    android:id="@+id/deals_details_text_andnrby_fragment_details_activity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_below="@+id/validity_layout_andnrby_details_activity"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

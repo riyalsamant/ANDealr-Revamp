@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_adddeal"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.ascentsmartwaves.andealrrevamp.custom.CustomEditText
+            android:id="@+id/deal_name_add_dealET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deal Name"
+            android:layout_margin="5dp"
+            />
+
+        <com.ascentsmartwaves.andealrrevamp.custom.CustomEditText
+            android:id="@+id/deal_description_add_dealET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deal Description"
+            android:layout_margin="5dp"
+            />
+        <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+            android:id="@+id/start_date_add_dealTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Set a Start Date and Time"
+            android:gravity="center"
+            />
+
+
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker"
+            android:layout_gravity="center_horizontal" />
+
+
+
+
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker"
+            android:layout_gravity="center_horizontal" />
+
+
+        <com.ascentsmartwaves.andealrrevamp.custom.CustomTextView
+            android:id="@+id/end_date_add_dealTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Set an End Date and Time"
+            android:gravity="center"
+            />
+
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker1"
+            android:layout_gravity="center_horizontal" />
+
+
+
+
+
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker1"
+            android:layout_gravity="center_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/upload_image_add_deal_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/upload_image"
+                android:scaleType="centerCrop"
+                />
+
+            <include
+                android:id="@+id/upload_or_cancel_included"
+                layout="@layout/upload_or_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                />
+
+        </RelativeLayout>
+
+        <com.ascentsmartwaves.andealrrevamp.custom.CustomButton
+            android:id="@+id/add_deal_add_dealBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Deal"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</ScrollView>
