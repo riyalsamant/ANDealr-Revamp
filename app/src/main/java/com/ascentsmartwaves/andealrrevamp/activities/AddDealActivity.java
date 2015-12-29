@@ -1,5 +1,6 @@
 package com.ascentsmartwaves.andealrrevamp.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -31,7 +32,7 @@ DatePicker start_date,end_date;
         setContentView(R.layout.activity_add_deal);
 
 findViews();
-
+setViews();
     }
 
     private void findViews() {
@@ -52,11 +53,18 @@ findViews();
 
     private void setViews(){
 
+        addDeal.setOnClickListener(listener);
+        cancelButton.setOnClickListener(listener);
 
 
 
 
 
     }
+    private View.OnClickListener listener = new View.OnClickListener(){
 
+
+        public void onClick(View v) {
+        }
+    };
 }

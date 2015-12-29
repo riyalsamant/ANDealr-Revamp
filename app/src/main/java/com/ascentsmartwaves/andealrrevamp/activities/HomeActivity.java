@@ -1,5 +1,6 @@
 package com.ascentsmartwaves.andealrrevamp.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -30,5 +31,36 @@ private void findViews()
 
     private void setViews()
     {
+       newdeal.setOnClickListener(listener);
+       dealdetails.setOnClickListener(listener);
+      editprofile.setOnClickListener(listener);
+       logout.setOnClickListener(listener);
+
     }
+
+    private View.OnClickListener listener = new View.OnClickListener(){
+        public void onClick(View v) {
+            Intent i;
+            switch (v.getId()){
+
+                case R.id.newdeal_btn:
+                  i = new Intent(HomeActivity.this,AddDealActivity.class);
+                    startActivity(i);
+                    break;
+                case R.id.dealdetails_btn:
+                    i = new Intent(HomeActivity.this,DealDetailsActivity.class);
+                    startActivity(i);
+                    break;
+                case R.id.editprofile_btn:
+                    i = new Intent(HomeActivity.this,ProfileActivity.class);
+                    startActivity(i);
+                    break;
+                case R.id.logout_btn:
+                    i = new Intent(HomeActivity.this,AddDealActivity.class);
+                    startActivity(i);
+                    break;
+
+            }
+        }
+    };
 }

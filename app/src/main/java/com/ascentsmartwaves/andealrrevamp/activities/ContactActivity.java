@@ -23,6 +23,7 @@ EditText name,email,feedback;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
         findViews();
+        setViews();
     }
 
 
@@ -36,4 +37,19 @@ EditText name,email,feedback;
      response=(CheckBox)findViewById(R.id.contact_response);
 
     }
+
+    private void setViews(){
+
+    submit.setOnClickListener(listener);
+
+
+
+
+
+    }
+    private View.OnClickListener listener = new View.OnClickListener(){
+        public void onClick(View v) {
+
+        }
+    };
 }
