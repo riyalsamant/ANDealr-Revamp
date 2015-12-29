@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_contact">
+
+
+    <EditText
+        android:id="@+id/contact_name"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent">
+    </EditText>
+    <EditText
+        android:id="@+id/contact_email"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent">
+    </EditText>
+    <Spinner
+        android:id="@+id/FeedbackType"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:entries="@array/feedbacktypelist">
+    </Spinner>
+    <EditText
+        android:id="@+id/contact_feedback"
+        android:layout_height="wrap_content"
+        android:hint="Feedback"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:layout_width="395dp">
+    </EditText>
+    <CheckBox
+        android:id="@+id/contact_response"
+        android:layout_height="wrap_content"
+        android:text="Would You Like An Email Resposne"
+        android:layout_width="fill_parent">
+    </CheckBox>
+    <Button
+        android:id="@+id/contact_submit"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="sendFeedback"
+        android:layout_width="fill_parent">
+    </Button>
+</LinearLayout>

@@ -22,6 +22,10 @@
         app:layout_scrollFlags="scroll|enterAlways"
         android:theme="@style/Base.Theme.HMKCodeApp"/>
 
-
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tabLayout"/>
 
 </RelativeLayout>
